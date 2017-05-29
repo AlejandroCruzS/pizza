@@ -12,6 +12,10 @@
 		A93A97AC1ED404950041E338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93A97AA1ED404950041E338 /* Main.storyboard */; };
 		A93A97AE1ED404950041E338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93A97AD1ED404950041E338 /* Assets.xcassets */; };
 		A93A97B11ED404950041E338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93A97AF1ED404950041E338 /* LaunchScreen.storyboard */; };
+		A97F76EF1EDBC8F900F55194 /* Paso2Contoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F76EE1EDBC8F900F55194 /* Paso2Contoller.swift */; };
+		A97F76F11EDBC92C00F55194 /* Paso3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F76F01EDBC92C00F55194 /* Paso3Controller.swift */; };
+		A97F76F31EDBC94C00F55194 /* Paso4Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F76F21EDBC94C00F55194 /* Paso4Controller.swift */; };
+		A97F76F51EDBDC1000F55194 /* Confirmacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F76F41EDBDC1000F55194 /* Confirmacion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		A93A97AD1ED404950041E338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A93A97B01ED404950041E338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A93A97B21ED404950041E338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97F76EE1EDBC8F900F55194 /* Paso2Contoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paso2Contoller.swift; sourceTree = "<group>"; };
+		A97F76F01EDBC92C00F55194 /* Paso3Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paso3Controller.swift; sourceTree = "<group>"; };
+		A97F76F21EDBC94C00F55194 /* Paso4Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paso4Controller.swift; sourceTree = "<group>"; };
+		A97F76F41EDBDC1000F55194 /* Confirmacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Confirmacion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				A93A97AD1ED404950041E338 /* Assets.xcassets */,
 				A93A97AF1ED404950041E338 /* LaunchScreen.storyboard */,
 				A93A97B21ED404950041E338 /* Info.plist */,
+				A97F76EE1EDBC8F900F55194 /* Paso2Contoller.swift */,
+				A97F76F01EDBC92C00F55194 /* Paso3Controller.swift */,
+				A97F76F21EDBC94C00F55194 /* Paso4Controller.swift */,
+				A97F76F41EDBDC1000F55194 /* Confirmacion.swift */,
 			);
 			path = Pizza;
 			sourceTree = "<group>";
@@ -137,7 +149,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A93A97A91ED404950041E338 /* ViewController.swift in Sources */,
+				A97F76EF1EDBC8F900F55194 /* Paso2Contoller.swift in Sources */,
+				A97F76F31EDBC94C00F55194 /* Paso4Controller.swift in Sources */,
+				A97F76F11EDBC92C00F55194 /* Paso3Controller.swift in Sources */,
 				A93A97A71ED404950041E338 /* AppDelegate.swift in Sources */,
+				A97F76F51EDBDC1000F55194 /* Confirmacion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +315,7 @@
 				A93A97B71ED404950041E338 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

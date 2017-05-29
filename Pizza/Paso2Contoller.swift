@@ -1,31 +1,34 @@
 //
-//  ViewController.swift
+//  Paso2.swift
 //  Pizza
 //
-//  Created by Alejandro Cruz Sanchez on 23/05/17.
+//  Created by Alejandro Cruz Sanchez on 28/05/17.
 //  Copyright © 2017 Alejandro Cruz. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-    
-    
-    @IBOutlet weak var pickertamanio: UIPickerView!
-    
-    var arrayPickerDataSource = ["Chica","Mediana","Grande"]
+class Paso2Controller: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     var tamanio:String = "";
+    var tipoMasa:String = "";
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
+    
+    @IBOutlet weak var pickerMasa: UIPickerView!
+    
+    var arrayPickerDataSource = ["Delgada","Crujiente","Gruesa"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.pickertamanio.dataSource = self
-        self.pickertamanio.delegate = self
+        self.pickerMasa.dataSource = self
+        self.pickerMasa.delegate = self
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -33,9 +36,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
-        tamanio = arrayPickerDataSource[row]
-        
+        tipoMasa = arrayPickerDataSource[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -47,9 +48,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let sigVista = segue.destination as! Paso2Controller
+        let sigVista = segue.destination as! Paso3Controller
         
         sigVista.tamanio = tamanio
+        sigVista.tipoMasa = tipoMasa
+        
     }
-}
 
+    
+}
